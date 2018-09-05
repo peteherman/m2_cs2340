@@ -33,8 +33,8 @@ public class Person2 {
 	  //Person 2 put your implementation here
 	    if (input == null) return null;
 	    if (input.length() == 1 || input.length() == 0) return input;
-	    java.util.List<String> list = Arrays.asList(input.split(""));
-	    Collections.shuffle(list);
+	    java.util.List<String> list = java.util.Arrays.asList(input.split(""));
+	    java.util.Collections.shuffle(list);
 	    String toReturn = "";
 	    for (String letter : list) {
 		toReturn += letter;
