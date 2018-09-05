@@ -31,7 +31,15 @@ public class Person2 {
 	 */
 	private String calc(String input) {
 	  //Person 2 put your implementation here
-	  return null;
+	    if (input == null) return null;
+	    if (input.length() == 1 || input.length() == 0) return input;
+	    java.util.List<String> list = Arrays.asList(input.split(""));
+	    Collections.shuffle(list);
+	    String toReturn = "";
+	    for (String letter : list) {
+		toReturn += letter;
+	    }
+	  return toReturn;
 	}
 	/**
 	 * Return a string rep of this object
